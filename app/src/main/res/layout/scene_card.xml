@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scene_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:background="#fafafa"
+    android:translationZ="1dp"
+    app:layout_behavior=".LayerTopBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/card_part1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#eff6fa" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/card_part2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question_body"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/zhihu_body1"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </ScrollView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/card_part2"
+            android:background="#dcdcdc" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fab"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-16dp"
+            android:background="@drawable/white_circle"
+            android:elevation="4dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_keyboard_arrow_up_black_18dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/card_part3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="-16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_remove_red_eye_grey_500_24dp"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:minWidth="48dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="938"
+                android:textColor="#979797" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_chat_bubble_grey_500_24dp"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:minWidth="48dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="20"
+                android:textColor="#979797" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/follow"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical|right"
+                android:background="#45cb7f"
+                android:text="关注"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

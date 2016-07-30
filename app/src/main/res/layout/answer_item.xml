@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:clickable="true"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="木落叶,"
+                android:textColor="#202020"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="玩水去了"
+                android:textColor="#202020"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/face"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="#e8e8e8" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="264dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="16dp"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="4"
+                android:text="如何学习和应用“如如何学习和应用“如如何学习和应用“如何提高学习能力“的回答，本身就是一个很有意思的问题。世界上的学习有两种，一种是信息式的，一种是转化型的（transformative education）。目前的传统教育都是信息式的，很重要。随着学生的练习，老师的教育，学习能力会逐步提高。学习…"
+                android:textColor="#323232" />
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:background="#eff6fa"
+                android:gravity="center"
+                android:text="2.1K"
+                android:textColor="#0077d9" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
