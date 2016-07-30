@@ -11,7 +11,11 @@
 
 
 参考资料：
+
 [Material Design 简要入门 - 徐梓桁](http://v.youku.com/v_show/id_XOTQxOTQzNTI0.html?from=y1.7-2)
+
 [Get Your Act Together with CoordinatorLayout](https://www.youtube.com/watch?v=x5o2hGMMmIw)
+
 [coordinated-effort](https://github.com/devunwired/coordinated-effort)
+
 [Animating Views Using Scenes and Transitions](https://developer.android.com/training/transitions/index.html)
